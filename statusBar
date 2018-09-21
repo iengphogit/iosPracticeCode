@@ -1,0 +1,15 @@
+swift 2
+
+override func prefersStatusBarHidden() -> Bool {
+    return true
+}
+swift 3 and later
+
+override var prefersStatusBarHidden: Bool {
+    return true
+}
+
+
+In Info.plist set View controller-based status bar appearance to NO
+
+And call UIApplication.shared.isStatusBarHidden = true
